@@ -1,0 +1,1428 @@
+{
+  "Rows": {
+    "InLogicalVisibleIndexes": [
+      0,
+      2,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45
+    ],
+    "Count": 47
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      59,
+      60,
+      61,
+      62,
+      63
+    ],
+    "Count": 69
+  },
+  "Values": {
+    "2,5": "最大明細番号",
+    "4,5": "艇種",
+    "4,18": "検索",
+    "4,47": "管理画面に戻る",
+    "7,15": "発注期限日数",
+    "7,27": "必要個数",
+    "9,5": "長期部材　行追加",
+    "9,15": "希望納期日数",
+    "9,35": "日数起点選択",
+    "9,51": "決定",
+    "11,30": "発注品番",
+    "11,48": "発注数",
+    "11,55": "必要工程",
+    "36,5": "マスタ更新",
+    "36,15": "マスタ追加メール",
+    "36,24": "Excelエクスポート",
+    "36,31": "Excelインポート"
+  },
+  "Formulas": {
+    "2,10": "MAX(K13)+1"
+  },
+  "AttachInfos": {
+    "4,9": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "艇種を記入"
+      }
+    },
+    "4,18": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "投入計画_長期部材管理マスタ",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 6,
+              "ColumnBindingInfo": {
+                "TableName": "投入計画_長期部材管理マスタ",
+                "ColumnName": "艇種",
+                "GUID": "53a1a06a-028e-464c-a247-9d33f938d4af"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "='長期部材マスタ設定 (2)'!J5"
+              }
+            },
+            "ID": "c42ecc7ff0bb4655b545344d4e96b9cf"
+          }
+        ],
+        "Text": "検索",
+        "TemplateKey": "_RS_Normal_Style2",
+        "Icon": {
+          "Name": "Application/047_search_8.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "4,27": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "品名を記入して検索"
+      }
+    },
+    "4,38": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "投入計画_長期部材管理マスタ",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 6,
+              "ColumnBindingInfo": {
+                "TableName": "投入計画_長期部材管理マスタ",
+                "ColumnName": "品名",
+                "GUID": "d790b211-5421-4737-9b39-7cfacd0804ec"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "='長期部材マスタ設定 (2)'!AB5"
+              }
+            },
+            "ID": "031522aa83ba48b5849db431e68aac86"
+          }
+        ],
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "4,47": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "長期部材管理画面",
+            "DeleteCachedQuery": true
+          }
+        ],
+        "Text": "管理画面に戻る",
+        "TemplateKey": "_RS_Normal_Style2",
+        "Icon": {
+          "Name": "Arrow/304_undo_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "7,21": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "日数を記入"
+      }
+    },
+    "7,31": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "個数を記入"
+      }
+    },
+    "9,5": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "本当に実行してもよろしいですか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                    "ListviewName": "リストビュー1",
+                    "UpdateType": 1,
+                    "UpdateValues": [
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='長期部材マスタ設定 (2)'!F13"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='長期部材マスタ設定 (2)'!J5"
+                        }
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='長期部材マスタ設定 (2)'!K13"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='長期部材マスタ設定 (2)'!K3"
+                        }
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='長期部材マスタ設定 (2)'!AW13"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='長期部材マスタ設定 (2)'!AF8"
+                        }
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='長期部材マスタ設定 (2)'!AZ13"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='長期部材マスタ設定 (2)'!V8"
+                        }
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='長期部材マスタ設定 (2)'!BD13"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='長期部材マスタ設定 (2)'!AQ10"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "388747d4-6029-4e27-bd88-c28bccc1d219"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "='長期部材マスタ設定 (2)'!V8"
+                          }
+                        ]
+                      },
+                      "value": "%Null%",
+                      "compareType": 1
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "='長期部材マスタ設定 (2)'!V10"
+                          }
+                        ]
+                      },
+                      "value": "%Null%",
+                      "compareType": 1
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "='長期部材マスタ設定 (2)'!AF8"
+                          }
+                        ]
+                      },
+                      "value": "%Null%",
+                      "compareType": 1
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "='長期部材マスタ設定 (2)'!AQ10"
+                          }
+                        ]
+                      },
+                      "value": "%Null%",
+                      "compareType": 1
+                    }
+                  ]
+                },
+                "CommandList": [],
+                "ID": "27ad4d4f-388c-40eb-ae6e-c34b207ea1de"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "='長期部材マスタ設定 (2)'!AQ10"
+                      }
+                    ]
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "起点を選択してください。"
+                  }
+                ],
+                "ID": "e4275f27-1ba6-4db2-8305-e8c63a12f0a9"
+              },
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "='長期部材マスタ設定 (2)'!V8"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "='長期部材マスタ設定 (2)'!V10"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "='長期部材マスタ設定 (2)'!AF8"
+                          }
+                        ]
+                      },
+                      "value": "%Null%"
+                    }
+                  ]
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "希望納期・発注期限日数、必要個数を入力してください。"
+                  }
+                ],
+                "ID": "9e93633e-e405-4584-b54a-ae1522ec0ba1"
+              }
+            ],
+            "Disabled": true
+          }
+        ],
+        "Text": "長期部材　行追加",
+        "TemplateKey": "_RS_Normal_Style2",
+        "Icon": {
+          "Name": "Application/002_add_2.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "9,21": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "日数を記入"
+      }
+    },
+    "9,42": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "Items": [
+          {
+            "Value": "エンジン必要日起点",
+            "DisplayValue": "エンジン必要日起点"
+          },
+          {
+            "Value": "組立投入日起点",
+            "DisplayValue": "組立投入日起点"
+          }
+        ]
+      }
+    },
+    "9,51": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "='長期部材マスタ設定 (2)'!AQ10"
+                      }
+                    ]
+                  },
+                  "value": "エンジン必要日起点"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                    "ListviewName": "リストビュー1",
+                    "UpdateValues": [
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='長期部材マスタ設定 (2)'!BD13"
+                        },
+                        "Value": "1"
+                      }
+                    ],
+                    "UpdateRowType": 2
+                  }
+                ],
+                "ID": "1975518a-76b5-4f7f-a2f6-8a46a08e1a97"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                    "ListviewName": "リストビュー1",
+                    "UpdateValues": [
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='長期部材マスタ設定 (2)'!BD13"
+                        },
+                        "Value": "2"
+                      }
+                    ],
+                    "UpdateRowType": 2
+                  }
+                ],
+                "ID": "726f8eb5-b824-4d78-b33c-28846230a925"
+              }
+            ]
+          }
+        ],
+        "Text": "決定",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "11,5": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "投入計画_長期部材管理マスタ",
+        "RowIndex": 11,
+        "ColumnIndex": 5,
+        "RowCount": 24,
+        "ColumnCount": 62,
+        "TopCondition": null,
+        "ListViewStyleName": "ユーザー設定1",
+        "CurrentRowChangedCommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='長期部材マスタ設定 (2)'!W3"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='長期部材マスタ設定 (2)'!F13"
+                }
+              }
+            ]
+          }
+        ],
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "ColumnOperation": 2,
+        "CommitType": 1,
+        "DoNotLoadDataWhenLoadPage": true,
+        "CacheSetting": {}
+      }
+    },
+    "12,5": {
+      "BindingInfo": {
+        "TableName": "投入計画_長期部材管理マスタ",
+        "ColumnName": "艇種",
+        "GUID": "8f94515f-2821-4470-9268-a58efae00849"
+      }
+    },
+    "12,10": {
+      "BindingInfo": {
+        "TableName": "投入計画_長期部材管理マスタ",
+        "ColumnName": "仕組コード",
+        "GUID": "84205b5c-39f7-4ca5-b66c-5f6254428f8a"
+      }
+    },
+    "12,18": {
+      "BindingInfo": {
+        "TableName": "投入計画_長期部材管理マスタ",
+        "ColumnName": "仕組名称",
+        "GUID": "65d2389d-e301-4627-bb49-ca461c814e07"
+      }
+    },
+    "12,30": {
+      "BindingInfo": {
+        "TableName": "投入計画_長期部材管理マスタ",
+        "ColumnName": "品番",
+        "GUID": "be3cd11e-8f88-4247-9f02-dd08ea884e48"
+      }
+    },
+    "12,36": {
+      "BindingInfo": {
+        "TableName": "投入計画_長期部材管理マスタ",
+        "ColumnName": "品名",
+        "GUID": "2b4f3315-7075-4a39-9c61-d22072b86f0e"
+      }
+    },
+    "12,48": {
+      "BindingInfo": {
+        "TableName": "投入計画_長期部材管理マスタ",
+        "ColumnName": "個数",
+        "GUID": "162dc5e3-2c3c-407a-9561-5edd4ec2f5f5"
+      }
+    },
+    "12,51": {
+      "BindingInfo": {
+        "TableName": "投入計画_長期部材管理マスタ",
+        "ColumnName": "リードタイム",
+        "GUID": "4798c459-0a94-49e6-8188-89a3ef0fba1d"
+      }
+    },
+    "12,55": {
+      "BindingInfo": {
+        "TableName": "投入計画_長期部材管理マスタ",
+        "ColumnName": "発注期限ベース種類",
+        "GUID": "ac51629b-0bcd-4d50-891b-6b05beda4bb0"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "Items": [
+          {
+            "Value": "0",
+            "DisplayValue": "エンジン"
+          },
+          {
+            "Value": "1",
+            "DisplayValue": "組立"
+          }
+        ]
+      }
+    },
+    "12,59": {
+      "BindingInfo": {
+        "TableName": "投入計画_長期部材管理マスタ",
+        "ColumnName": "備考",
+        "GUID": "84022445-8b25-4565-8344-2fa42fde1ada"
+      }
+    },
+    "36,5": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "本当に実行してもよろしいですか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                    "ListviewName": "リストビュー1",
+                    "UpdateType": 3
+                  }
+                ],
+                "ID": "acfef487-7226-4695-bcfa-1b8fa739bd1f"
+              }
+            ]
+          }
+        ],
+        "Text": "マスタ更新",
+        "TemplateKey": "_RS_Normal_Style2",
+        "Icon": {
+          "Name": "Application/063_refresh_7.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "36,15": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "本当に実行してもよろしいですか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                    "ServerCommandName": "マスタ追加メール送信",
+                    "Parameters": [
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "艇種",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='長期部材マスタ設定 (2)'!J5"
+                        }
+                      }
+                    ],
+                    "RefreshAfterFinish": true,
+                    "CheckDataValidation": true
+                  }
+                ],
+                "ID": "6c23072d-7879-4dc5-87fb-3f1e839b7b08"
+              }
+            ]
+          }
+        ],
+        "Text": "マスタ追加メール",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "36,24": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ExportListViewToExcelCommand, ServerDesignerCommon",
+            "ListViewName": "リストビュー1",
+            "NewOtherName": "",
+            "IsOnlyExportValue": false
+          }
+        ],
+        "Text": "Excelエクスポート",
+        "TemplateKey": "_RS_Normal_Style2",
+        "Icon": {
+          "Name": "File/348_excel_file_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "36,31": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ImportExcelToListViewCommand, ServerDesignerCommon",
+            "ListViewName": "リストビュー1",
+            "ImportExcelToListViewColumnInfos": [
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='長期部材マスタ設定 (2)'!F13"
+                },
+                "ColumnName": "艇種"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='長期部材マスタ設定 (2)'!K13"
+                },
+                "ColumnName": "仕組コード"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='長期部材マスタ設定 (2)'!S13"
+                },
+                "ColumnName": "仕組名称"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='長期部材マスタ設定 (2)'!AE13"
+                },
+                "ColumnName": "発注品番"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='長期部材マスタ設定 (2)'!AK13"
+                },
+                "ColumnName": "品名"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='長期部材マスタ設定 (2)'!AW13"
+                },
+                "ColumnName": "発注数"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='長期部材マスタ設定 (2)'!AZ13"
+                },
+                "ColumnName": "リードタイム"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='長期部材マスタ設定 (2)'!BD13"
+                },
+                "ColumnName": "必要工程"
+              }
+            ],
+            "IsShowSuccessAlert": true,
+            "SuccessMessage": "Excelファイルのインポートが正常に完了しました。"
+          }
+        ],
+        "Text": "Excelインポート",
+        "TemplateKey": "_RS_Normal_Style2",
+        "Icon": {
+          "Name": "File/349_excel_file_2.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "FontSize": 21.333333333333332,
+        "FontWeight": 2,
+        "HorizontalAlignment": 3,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 5,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "Foreground": 4
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 5,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 16.0,
+        "FontWeight": 2,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 6,
+        "FontFamily": 1,
+        "FontSize": 16.0,
+        "FontWeight": 2,
+        "HorizontalAlignment": 3,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 7,
+        "HorizontalAlignment": 3,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 7,
+        "HorizontalAlignment": 3,
+        "BorderTop": 0
+      },
+      {
+        "FontSize": 14.666666666666666,
+        "FontWeight": 2,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 7,
+        "HorizontalAlignment": 3,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderRight": 0
+      },
+      {
+        "Background": 8,
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 9
+      },
+      {
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "HorizontalAlignment": 10,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "HorizontalAlignment": 10
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "FontSize": 16.0,
+        "FontWeight": 2,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontSize": 13.333333333333332
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Accent 4 40",
+        "Body",
+        "Bold",
+        "Center",
+        "black",
+        "@",
+        "Accent 3 0",
+        "0_);[Red](0)",
+        "#FFFFFF00",
+        "[AUTO]General",
+        "Right"
+      ],
+      "Borders": [
+        {
+          "Color": 4
+        }
+      ]
+    },
+    "CellStyles": {
+      "4,5": 0,
+      "4,6": 1,
+      "4,7": 1,
+      "4,8": 2,
+      "4,9": 3,
+      "4,10": 1,
+      "4,11": 1,
+      "4,12": 1,
+      "4,13": 1,
+      "4,14": 1,
+      "4,15": 1,
+      "4,16": 1,
+      "4,17": 1,
+      "4,18": 4,
+      "4,19": 5,
+      "4,20": 5,
+      "4,21": 5,
+      "4,27": 6,
+      "4,28": 7,
+      "4,29": 7,
+      "4,30": 7,
+      "4,31": 7,
+      "4,32": 7,
+      "4,33": 7,
+      "4,34": 7,
+      "4,35": 7,
+      "4,36": 7,
+      "4,37": 7,
+      "4,38": 8,
+      "4,39": 9,
+      "4,40": 10,
+      "4,47": 11,
+      "4,48": 9,
+      "4,49": 9,
+      "4,50": 9,
+      "4,51": 9,
+      "4,52": 9,
+      "4,53": 9,
+      "4,54": 9,
+      "4,55": 10,
+      "5,5": 1,
+      "5,6": 1,
+      "5,7": 1,
+      "5,8": 2,
+      "5,9": 1,
+      "5,10": 1,
+      "5,11": 1,
+      "5,12": 1,
+      "5,13": 1,
+      "5,14": 1,
+      "5,15": 1,
+      "5,16": 1,
+      "5,17": 1,
+      "5,18": 5,
+      "5,19": 5,
+      "5,20": 5,
+      "5,21": 5,
+      "5,27": 12,
+      "5,28": 13,
+      "5,29": 13,
+      "5,30": 13,
+      "5,31": 13,
+      "5,32": 13,
+      "5,33": 13,
+      "5,34": 13,
+      "5,35": 13,
+      "5,36": 13,
+      "5,37": 13,
+      "5,38": 14,
+      "5,39": 15,
+      "5,40": 16,
+      "5,47": 14,
+      "5,48": 15,
+      "5,49": 15,
+      "5,50": 15,
+      "5,51": 15,
+      "5,52": 15,
+      "5,53": 15,
+      "5,54": 15,
+      "5,55": 16,
+      "7,15": 17,
+      "7,16": 1,
+      "7,17": 1,
+      "7,18": 1,
+      "7,19": 1,
+      "7,20": 2,
+      "7,21": 18,
+      "7,22": 1,
+      "7,23": 1,
+      "7,24": 1,
+      "7,25": 1,
+      "7,26": 1,
+      "7,27": 17,
+      "7,28": 1,
+      "7,29": 1,
+      "7,30": 1,
+      "7,31": 19,
+      "7,32": 9,
+      "7,33": 9,
+      "7,34": 10,
+      "8,15": 1,
+      "8,16": 1,
+      "8,17": 1,
+      "8,18": 1,
+      "8,19": 1,
+      "8,20": 2,
+      "8,21": 1,
+      "8,22": 1,
+      "8,23": 1,
+      "8,24": 1,
+      "8,25": 1,
+      "8,26": 1,
+      "8,27": 1,
+      "8,28": 1,
+      "8,29": 1,
+      "8,30": 1,
+      "8,31": 15,
+      "8,32": 15,
+      "8,33": 15,
+      "8,34": 16,
+      "9,5": 20,
+      "9,6": 7,
+      "9,7": 7,
+      "9,8": 7,
+      "9,9": 7,
+      "9,10": 7,
+      "9,11": 7,
+      "9,12": 21,
+      "9,15": 17,
+      "9,16": 1,
+      "9,17": 1,
+      "9,18": 1,
+      "9,19": 1,
+      "9,20": 1,
+      "9,21": 22,
+      "9,22": 5,
+      "9,23": 5,
+      "9,24": 5,
+      "9,25": 5,
+      "9,26": 23,
+      "9,35": 24,
+      "9,36": 1,
+      "9,37": 1,
+      "9,38": 1,
+      "9,39": 1,
+      "9,40": 1,
+      "9,41": 2,
+      "9,42": 1,
+      "9,43": 25,
+      "9,44": 25,
+      "9,45": 25,
+      "9,46": 25,
+      "9,47": 25,
+      "9,48": 25,
+      "9,49": 25,
+      "9,50": 25,
+      "9,51": 26,
+      "9,52": 5,
+      "9,53": 5,
+      "10,5": 12,
+      "10,6": 13,
+      "10,7": 13,
+      "10,8": 13,
+      "10,9": 13,
+      "10,10": 13,
+      "10,11": 13,
+      "10,12": 27,
+      "10,13": 13,
+      "10,14": 13,
+      "10,15": 1,
+      "10,16": 1,
+      "10,17": 1,
+      "10,18": 1,
+      "10,19": 1,
+      "10,20": 1,
+      "10,21": 14,
+      "10,22": 15,
+      "10,23": 15,
+      "10,24": 15,
+      "10,25": 15,
+      "10,26": 16,
+      "10,35": 1,
+      "10,36": 1,
+      "10,37": 1,
+      "10,38": 1,
+      "10,39": 1,
+      "10,40": 1,
+      "10,41": 2,
+      "10,42": 25,
+      "10,43": 25,
+      "10,44": 25,
+      "10,45": 25,
+      "10,46": 25,
+      "10,47": 25,
+      "10,48": 25,
+      "10,49": 25,
+      "10,50": 25,
+      "10,51": 5,
+      "10,52": 5,
+      "10,53": 5,
+      "11,4": 28,
+      "11,10": 5,
+      "11,11": 5,
+      "11,12": 5,
+      "11,13": 5,
+      "11,14": 5,
+      "11,15": 5,
+      "11,16": 5,
+      "11,17": 5,
+      "11,30": 5,
+      "11,31": 5,
+      "11,32": 5,
+      "11,33": 5,
+      "11,34": 5,
+      "11,35": 5,
+      "11,36": 5,
+      "11,37": 5,
+      "11,38": 5,
+      "11,39": 5,
+      "11,40": 5,
+      "11,41": 5,
+      "11,42": 5,
+      "11,43": 5,
+      "11,44": 5,
+      "11,45": 5,
+      "11,46": 5,
+      "11,47": 5,
+      "11,48": 5,
+      "11,49": 5,
+      "11,50": 5,
+      "11,55": 5,
+      "12,5": 25,
+      "12,6": 25,
+      "12,7": 25,
+      "12,8": 25,
+      "12,9": 25,
+      "12,10": 29,
+      "12,11": 5,
+      "12,12": 5,
+      "12,13": 5,
+      "12,14": 5,
+      "12,15": 5,
+      "12,16": 5,
+      "12,17": 5,
+      "12,30": 29,
+      "12,31": 5,
+      "12,32": 5,
+      "12,33": 5,
+      "12,34": 5,
+      "12,35": 5,
+      "12,36": 2,
+      "12,37": 30,
+      "12,38": 30,
+      "12,39": 30,
+      "12,40": 30,
+      "12,41": 30,
+      "12,42": 30,
+      "12,43": 30,
+      "12,44": 30,
+      "12,45": 30,
+      "12,46": 30,
+      "12,47": 31,
+      "12,48": 32,
+      "12,49": 1,
+      "12,50": 1,
+      "12,51": 33,
+      "12,54": 28,
+      "12,55": 2,
+      "12,56": 34,
+      "12,57": 34,
+      "12,58": 34,
+      "13,4": 28,
+      "14,4": 28,
+      "15,4": 28,
+      "16,4": 28,
+      "17,4": 28,
+      "18,4": 28,
+      "19,4": 28,
+      "20,4": 28,
+      "21,4": 28,
+      "22,4": 28,
+      "23,4": 28,
+      "24,4": 28,
+      "25,4": 28,
+      "26,4": 28,
+      "27,4": 28,
+      "28,4": 28,
+      "29,4": 28,
+      "30,4": 28,
+      "31,4": 28,
+      "32,4": 28,
+      "33,4": 28,
+      "34,4": 28,
+      "36,5": 35,
+      "36,6": 7,
+      "36,7": 7,
+      "36,8": 7,
+      "36,9": 7,
+      "36,10": 7,
+      "36,11": 7,
+      "36,12": 21,
+      "36,15": 5,
+      "36,16": 5,
+      "36,17": 5,
+      "36,18": 5,
+      "36,19": 5,
+      "36,20": 5,
+      "36,24": 36,
+      "36,31": 36,
+      "37,5": 12,
+      "37,6": 13,
+      "37,7": 13,
+      "37,8": 13,
+      "37,9": 13,
+      "37,10": 13,
+      "37,11": 13,
+      "37,12": 27,
+      "37,15": 5,
+      "37,16": 5,
+      "37,17": 5,
+      "37,18": 5,
+      "37,19": 5,
+      "37,20": 5
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "36,5,2,8",
+    "9,5,2,8",
+    "4,5,2,4",
+    "4,9,2,9",
+    "9,15,2,6",
+    "7,15,2,6",
+    "7,21,2,6",
+    "9,21,2,6",
+    "4,18,2,4",
+    "9,35,2,7",
+    "7,27,2,4",
+    "7,31,2,4",
+    "9,51,2,3",
+    "9,42,2,9",
+    "2,22,1,6",
+    "4,47,2,9",
+    "4,38,2,3",
+    "4,27,2,11",
+    "36,15,2,6",
+    "36,24,2,6",
+    "36,31,2,6",
+    "12,5,1,5",
+    "12,10,1,8",
+    "12,18,1,12",
+    "12,30,1,6",
+    "12,36,1,12",
+    "12,48,1,3",
+    "12,51,1,4",
+    "12,55,1,4",
+    "13,5,22,62",
+    "12,59,1,8",
+    "11,5,1,5",
+    "11,10,1,8",
+    "11,18,1,12",
+    "11,30,1,6",
+    "11,36,1,12",
+    "11,48,1,3",
+    "11,51,1,4",
+    "11,55,1,4",
+    "11,59,1,8"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "長期部材管理",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+        "TargetTableName": "投入計画_長期部材管理マスタ",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "投入計画_長期部材管理マスタ",
+            "ColumnName": "艇種",
+            "GUID": "f1777cf9-90c1-40ce-ba3e-dc0dbc05e577"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "='長期部材マスタ設定 (2)'!J5"
+          }
+        },
+        "ID": "091b82fa06374b28afb2b37eea989d68",
+        "Disabled": true
+      }
+    ],
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "投入計画_長期部材管理マスタ"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//6HBxGkWyTU/U6+cuMOVm0+CLs0Y5nFo2w42OkijB4yhMHIdLPc+JsE5tIWRzZ/A0ZcGnZDdAxibqRS68igSc8VvFk/RyDE31HjZF1jJFMZKD8BmfQZ6UqK8OP8xW7h3wgSs3WGvCFREOD7b8Lr4fm+AyEVswl6FCjnaBy5QVfjJdNTtwMvRvSx/7V0cbENpFx+Sew6Qf1esGg/sf7k3KO+iu0jY0DBY6BFvKDmI6Sa2h+eIFeBNK5KEWobCdY3qxdVsor07mkh27KyNj9x4lbQ5fNTqRng9m4Nv6X61XtCWYNrXroM87dKrGQ2ikTA6s4OgNJUbrkgoiro2QnXZcE2Mz3+k01tRTfm9vA+XYA7dawlT2IgSMSwbU5TcJCoHPs6KDh75rrW2/0KWFsDlbwLEks7wXk6M5/6B8KN4yT8zL0R8LVvSz1/8lCyCfAwNFNbTkxRZPZVkHbI5k613j0YIJFuoHO0liE6NSu1eCf2O3DK7RvkpA/BlivI7OnFtaP69eeFfu2tUzkActWaQKavmRbB7I9Y0mRw3v6GzBiUnwNOWoZGodXFXTz8AgJxaWKasZZgh0xxWofM9QCRTtazF2LUssRC+00V235Bc7qtw7YUvmemeN1lbcXcDgxZvi+RPDHwCxBGt8mn+E7bju3znd8fDaZp1OMFssyy3WqTGjluu33jTviu3WZjZdzcjjU28yqKvOWaX/7CRhBmo0INr6JFXaVRvsMRVgamXn1oTt4txXAaFzpl61b16KBa/yki0s8CNQm166m878FVGgMn+p8I+69lKeTYrw4MT8FYqxGdI9qmwczR/jnbBHvwJl2usBLL+VY9Pb6n6/VasM+hM9j1svCBxCq9e5t2cC5UJohXKS8+vX9Tne2Wf6OQBLafLVcukUX6bIi68hIkn/rA==|920

@@ -1,0 +1,160 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "Count": 36
+  },
+  "Cols": {
+    "Count": 104
+  },
+  "AttachInfos": {
+    "1,1": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "ImagePath": "fgc_logo_light.svg"
+      }
+    },
+    "2,69": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "ShowCircleUserPicture": true,
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "7,0": {
+      "CellType": {
+        "$type": "Forguncy.CustomMenu.ForguncyMenuCellType, Forguncy.CustomMenu",
+        "TemplateKey": "_RS_Dark_ThemeStyle2",
+        "Items": [
+          {
+            "Text": "長期部材管理表",
+            "IconPath": "Navigation/183_table_2.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "長期部材管理画面"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Text": "長期部材マスタ設定画面",
+            "IconPath": "Navigation/183_table_2.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "長期部材マスタ設定 (2)"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "Orientation": 0,
+        "MenuLevelsStyle": [
+          {
+            "FontSize": 17.3333333333333,
+            "Height": 45.0,
+            "Width": 200.0,
+            "IconHeight": 24.0,
+            "IconWidth": 24.0
+          },
+          {
+            "FontSize": 16.0,
+            "Height": 32.0,
+            "Width": 200.0,
+            "IconHeight": 24.0,
+            "IconWidth": 24.0
+          }
+        ]
+      }
+    },
+    "9,0": {
+      "IsPlaceHolderCell": true
+    }
+  },
+  "StyleDatas": {
+    "Types": {
+      "Strs": [
+        "Body"
+      ]
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "1,1,5,10",
+    "9,0,27,104",
+    "2,69,3,35",
+    "7,0,2,104"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.MasterPage, ServerDesignerCommon",
+    "PageLoadedCommandList": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "FitToBrowserWidth": true,
+      "FitToBrowserHeight": true,
+      "Repeat": true,
+      "Name": "515397b3-ef9b-4f31-a45b-aa3c3ce18665",
+      "DisplayName": "背景画像1",
+      "ForguncyPictureName": "RepeatBackground/Sources/12.png",
+      "ForguncyPictureSourceType": 3,
+      "Stretch": 2,
+      "Location": "2,3",
+      "Size": "200,210"
+    },
+    {
+      "Name": "d7fb6181-e71a-4167-8b3d-6a2865f62b2a",
+      "DisplayName": "背景画像2",
+      "ForguncyPictureName": "Banner/Sources/07.png",
+      "ForguncyPictureSourceType": 3,
+      "Stretch": 3,
+      "StyleInfo": {
+        "Fill": "linear-gradient(0deg, Accent_1_0_178 31.42%, Background_1 100.00%)"
+      },
+      "IsAutomaticFill": false,
+      "Size": "2080,100"
+    }
+  ]
+}//uKZzDFeBlyOOrVQYfIKcrk3G1VCbWOJN7yPKKcmj7CVjZiSYaPC31jgRoEcBmRLLZiQaWazWeTCjrPt0kAQOJmPuY6za3AnOt3/D790aApVA9+uDJ+kXPXzXSyDVR2QP2vgnOFafeLbHxINbO94m1rqrEfwhnFRUmJzEJCgI3VD3/sjKX+9hUsxmURhehU/A05OCLcn9w00xILOwjALKH1zI02Zb0wf8kzomV61D1jWS7N1AH/5sK0TUh15QWcfc4uTMgTSKuxrC31VvAR1WJNiHcCzZwsoeLrbUBgWif//oh6ew6PGc1HfOJNxCAdVXUapR8IZhKhG+lS7hXQmyAknRlUVkIFajARvSzap8mfqXyM4DQFIKw8LAmCQmN75ORBf9NpdtNUVnqi8skQMBsu59c4R/rHf2DnBAQR0tYI5FvQVK56neZpwmx+JQZbusnZiojExUraekO+UE6qeJsSunbaWuk+4RSwltjQyvRRYRKl/HWDQ0R6ixsPnwCKvVaBphrKSjtzBKna4bWgUS2+sJNSK3HTqsTtMDvGbZkZje6bplpaDgPnHMR6/feDN4qkz6oKgODrql4r0sG38NcDMPJszDTfEQsGUxXAtdBG7jzpeTBHPRbCZ/Y7GVX37gNNMZnW4DUi3mrqQIwxzt9JkGnn7x8S6nCbIkSj6qpVq7j7zzD+VzQRGz1oySSJx3eHhPSOMdwqeC1fxz46FOPTSWpeZQe2+lhJWvr0YDQMqJ1bL6nS3ouufvgyVJuJiU9fok59eTGWgchA86SbKWV89us6aB08QYxP1dSollViaKPd7bdgl/V+0rt+8PbMjyDOr3d287bFP1uhdQfPFcfqjJG1wM4m1BixOPcECNVhbjysuJIwmQfkTKjJEFAWAixtbCkMtHdSnisNCJ0wl79g==|920
