@@ -129,31 +129,11 @@
   },
   {
     "ModuleName": "PCPage/長期部材マスタ設定",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-24T09:36:55.7197435+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\長期部材マスタ設定.json",
-      "Pages\\長期部材マスタ設定.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/長期部材マスタ設定 (2)",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-24T17:14:46.5615229+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\長期部材マスタ設定 (2).json",
-      "Pages\\長期部材マスタ設定 (2).rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/長期部材管理画面 (2)",
@@ -229,16 +209,7 @@
   },
   {
     "ModuleName": "PublishConfiguration",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-24T09:57:34.7442598+09:00",
-    "ModuleType": 39,
-    "ToRemoveFiles": [
-      "PublishSettingsConfig.json"
-    ]
+    "ModuleType": 39
   },
   {
     "ModuleName": "Plugin",

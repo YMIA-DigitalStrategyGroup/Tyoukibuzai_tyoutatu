@@ -2,7 +2,9 @@
   "Rows": {
     "InLogicalVisibleIndexes": [
       0,
-      2
+      2,
+      40,
+      41
     ],
     "Count": 47
   },
@@ -21,9 +23,9 @@
     "9,35": "日数起点選択",
     "9,51": "決定",
     "36,5": "マスタ更新",
-    "36,15": "マスタ追加メール",
     "36,24": "Excelエクスポート",
-    "36,31": "Excelインポート"
+    "36,31": "Excelインポート",
+    "40,14": "マスタ追加メール"
   },
   "Formulas": {
     "2,10": "MAX(K13)+1"
@@ -250,7 +252,7 @@
                     ]
                   }
                 ],
-                "ID": "aa3fe794-a136-4932-a251-226fef4ebfdd"
+                "ID": "efea60d6-be18-466f-ba71-9ea94c6b2cfc"
               }
             ]
           },
@@ -316,7 +318,7 @@
                   ]
                 },
                 "CommandList": [],
-                "ID": "a3bff316-fb56-4c22-a07a-8f809c63a45d"
+                "ID": "0197d37c-d89c-4b5b-a3e1-285fc4545de9"
               },
               {
                 "Condition": {
@@ -337,7 +339,7 @@
                     "MessageFormula": "起点を選択してください。"
                   }
                 ],
-                "ID": "d4262e85-a484-47f5-a86a-5e5e90ae02ff"
+                "ID": "0f9362de-091b-4f19-9434-2c0f72e32c38"
               },
               {
                 "Condition": {
@@ -387,7 +389,7 @@
                     "MessageFormula": "希望納期・発注期限日数、必要個数を入力してください。"
                   }
                 ],
-                "ID": "cfc8c832-e975-4f47-9496-0bde37f491ff"
+                "ID": "8f339971-0eae-4b51-8464-3ef1507f05e5"
               }
             ],
             "Disabled": true
@@ -474,7 +476,7 @@
                     "UpdateRowType": 2
                   }
                 ],
-                "ID": "84a7cf88-9dbd-475b-9c18-2b6cdd49d379"
+                "ID": "24d5feee-8043-474e-b935-96b29fa5a1ab"
               },
               {
                 "CommandList": [
@@ -500,7 +502,7 @@
                     "UpdateRowType": 2
                   }
                 ],
-                "ID": "97971877-3f9b-44f4-8b09-261bd9bc9058"
+                "ID": "e23a7424-9eb9-4c9d-bfce-27f2147cc235"
               }
             ]
           }
@@ -670,7 +672,7 @@
                     "UpdateType": 3
                   }
                 ],
-                "ID": "1e44bdb4-050a-4935-bdac-b7f1483692d3"
+                "ID": "5388d23c-5de2-4915-89c5-7f8459c2decc"
               }
             ]
           }
@@ -683,48 +685,6 @@
           "Color": "Background 1",
           "UseCellTypeForeColor": true
         }
-      }
-    },
-    "36,15": {
-      "CellType": {
-        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
-            "ConditionAndCommandPairList": [
-              {
-                "ConfirmDialogSettings": {
-                  "Title": "確認",
-                  "FormulaText": "本当に実行してもよろしいですか？",
-                  "YesButtonText": "はい",
-                  "NoButtonText": "いいえ",
-                  "ConfirmIcon": 1
-                },
-                "CommandList": [
-                  {
-                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
-                    "ServerCommandName": "マスタ追加メール送信",
-                    "Parameters": [
-                      {
-                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                        "ParamName": "艇種",
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=長期部材マスタ設定!J5"
-                        }
-                      }
-                    ],
-                    "RefreshAfterFinish": true,
-                    "CheckDataValidation": true
-                  }
-                ],
-                "ID": "b121cebf-a377-43b7-913e-f6b35b39d220"
-              }
-            ]
-          }
-        ],
-        "Text": "マスタ追加メール",
-        "TemplateKey": "_RS_Normal_Style2"
       }
     },
     "36,24": {
@@ -846,6 +806,48 @@
           "Color": "Background 1",
           "UseCellTypeForeColor": true
         }
+      }
+    },
+    "40,14": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "本当に実行してもよろしいですか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                    "ServerCommandName": "マスタ追加メール送信",
+                    "Parameters": [
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "艇種",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=長期部材マスタ設定!J5"
+                        }
+                      }
+                    ],
+                    "RefreshAfterFinish": true,
+                    "CheckDataValidation": true
+                  }
+                ],
+                "ID": "130d960e-bd6d-487d-baeb-38a5ad8599f2"
+              }
+            ]
+          }
+        ],
+        "Text": "マスタ追加メール",
+        "TemplateKey": "_RS_Normal_Style2"
       }
     }
   },
@@ -1366,12 +1368,6 @@
       "36,10": 7,
       "36,11": 7,
       "36,12": 8,
-      "36,15": 5,
-      "36,16": 5,
-      "36,17": 5,
-      "36,18": 5,
-      "36,19": 5,
-      "36,20": 5,
       "36,24": 32,
       "36,31": 32,
       "37,5": 12,
@@ -1382,12 +1378,18 @@
       "37,10": 13,
       "37,11": 13,
       "37,12": 14,
-      "37,15": 5,
-      "37,16": 5,
-      "37,17": 5,
-      "37,18": 5,
-      "37,19": 5,
-      "37,20": 5
+      "40,14": 5,
+      "40,15": 5,
+      "40,16": 5,
+      "40,17": 5,
+      "40,18": 5,
+      "40,19": 5,
+      "41,14": 5,
+      "41,15": 5,
+      "41,16": 5,
+      "41,17": 5,
+      "41,18": 5,
+      "41,19": 5
     },
     "SheetStyle": {
       "FontFamily": 1
@@ -1414,7 +1416,6 @@
     "4,47,2,9",
     "4,38,2,3",
     "4,27,2,11",
-    "36,15,2,6",
     "36,24,2,5",
     "36,31,2,5",
     "12,41,1,3",
@@ -1427,6 +1428,7 @@
     "12,21,1,8",
     "12,13,1,8",
     "13,5,22,59",
+    "40,14,2,6",
     "11,5,1,5",
     "11,10,1,3",
     "11,13,1,8",
@@ -1483,4 +1485,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//LgSUaBislWq6m3de6052kmVBP0cvsWKZVT8TwPIGaLRonlxYPCMzk7vvLZGuyv+WRJGftCWFG34Dhc2C1gktrc14fJQ0/8GcGfnEDw/Ums8ys+Gr1sLnAdbtMuMtfXNDbdi3pWUeueWYYOfzy6h6G7kaTwv2h63CkB4/7R8wGQUTMeQpgZenPO7NlGNjDBoVdaSyc9z6omMWlph0OY/uRRqcXdNJFaMrVYQE+DRvoKYDRLsY/TDyeb0Qiod/ZfZcY5a94dPvMn38nLeMKz5TtVGatYN6G/Zx0xwzs3AsshctXdrUhO/CGjR6TjpiuvwsHb2Dthi47XZi4txd/mavG8kdvGdex2ebJU2VZ2OG0O6/8kx1SB8vgkbwkCB6CBaqUC/KULf8Ca/xYXbYEPY6CGCm0mVqYqnAZRadLxZ9VGUMi/Ho6Jeu/IsU+NEf+LjCY8UafhUFVWoR7pKcdtXo0zqsYviZlkD0XNy/1tdicnU75VTyb3V74DXA3Oh65td3CbCyYjrnA32+vMZh07dnCCBLOI8FAVVkTJVK8cqBp/adc08fK1IJXzjGwTtt20OySqvzpUtqMUStdwKyvzGg9vhMcIse1g0kmGU/nGEH47RVTl9cSw41+P80exbaVzHRFZxN45wU4PGbi1eVoYV0a7kCDq2kZvazCimC0uyFfbn+grDie1okrFIlL2OftarAgsOAyTId2gbRSIpjLWOv95MPhhv04fzteTHLcKujXqhb8k25iCErMfdM8MiebVNmbC7xiTCXTIZcHnVZ+M0Yh4+G1ffdXd6TF7Ckg1GFeU8pNAxPA7q03/FvDLyaEEC4ObGrIAZZeIAVh4o8kJPKSn4RTGKpDc+lKg+Mwu53P7Yti5McWfw9vLGi4Jfou3g+p8S646sS+/omoB3zjpzMXQ==|920
+}//x8MjU+5wz4p80Ci/kXMDEWg+xrotJRPRJthopRc2NVhG9Qeo5gC9GP2YINsg5qEG6IShARqE5LatPLcju2hRwEQ/2wZL7dxdutPdQvb2pOtfp/HM6pSvfMJNQ0JsNvTyoxJ8oVo3CVba8tzBXr6nMr1BJX8nF5uOCc3RrYxJPGNAx7L6Bp9Cw6gD56WI/DvAf76jJvwBYn3N/Q1C9sgihBLg4JMdNoDmChNxCXPi5onqcZs5XHJuu5ivmAJ8z0UpduTaK5o5MarUVeIP/WhvFx1o9b/6Ju3etLNzI/nYgMAhvFsaG4dJ5w6GY977CuY75Q7Kuq6axPcRkmckbnjLJDxUscxqZ8IJOmjeWVqzWgOMT/EsTf3t2oVFq+OIGMdRvavDUGh0JmPiMPEUmENi+vAA+JqEarAEfvCD61lnYdJMX2xfS9mujS4wqu4XAhTKsxlp1OwCPvcaI1skKi/BcWKEKfOpKCkv97f4XI+udtGUxKImFI5lcXNviI6iLuWnWYGUhFMSPJMpUrhY1fX2muGpXsjcC5Uw9Whiq7av/34HO/8aAFepj2Ke0TynXiPQceQ+3b6J0jJ8Hea2LbxLFFPIVogSvPqq0rbaQuN6Pen8wEu1tiJ91NWKweaXcDZDd7fZquHWe7K0Wlnvk/8lbD7OOygBAS70nhK/FZvnTDD1ren1DgYeTa3kRKfBFdEQQzh6OqGlzpx489u2ciQyANAey8cBn0aKx4LHlQrB7wPskiK9/vMpissR4TMjhB0Edbz/HGdtMxWmP+J6M8sSLPszBpJ+UnHYEYwvB8Fw2Q5vy/Y7bJ1YB4klQeMasQ55aK0votbQLYe/mbDcmFYeTK72snbWdz5FtdAmLZr/RbpWmob4U/oA+xNDRCpO+it7kiSgw5FSqDNxmotNEnhSqw==|920
