@@ -50,6 +50,7 @@
         "TemplateKey": "_RS_Dark_ThemeStyle2",
         "Items": [
           {
+            "Value": "長期部材管理表",
             "Text": "長期部材管理表",
             "IconPath": "Navigation/183_table_2.svg",
             "SelectedIconColor": "Background 1",
@@ -67,6 +68,7 @@
             ]
           },
           {
+            "Value": "長期部材マスタ設定画面",
             "Text": "長期部材マスタ設定画面",
             "IconPath": "Navigation/183_table_2.svg",
             "SelectedIconColor": "Background 1",
@@ -157,4 +159,4 @@
       "Size": "2080,100"
     }
   ]
-}//uKZzDFeBlyOOrVQYfIKcrk3G1VCbWOJN7yPKKcmj7CVjZiSYaPC31jgRoEcBmRLLZiQaWazWeTCjrPt0kAQOJmPuY6za3AnOt3/D790aApVA9+uDJ+kXPXzXSyDVR2QP2vgnOFafeLbHxINbO94m1rqrEfwhnFRUmJzEJCgI3VD3/sjKX+9hUsxmURhehU/A05OCLcn9w00xILOwjALKH1zI02Zb0wf8kzomV61D1jWS7N1AH/5sK0TUh15QWcfc4uTMgTSKuxrC31VvAR1WJNiHcCzZwsoeLrbUBgWif//oh6ew6PGc1HfOJNxCAdVXUapR8IZhKhG+lS7hXQmyAknRlUVkIFajARvSzap8mfqXyM4DQFIKw8LAmCQmN75ORBf9NpdtNUVnqi8skQMBsu59c4R/rHf2DnBAQR0tYI5FvQVK56neZpwmx+JQZbusnZiojExUraekO+UE6qeJsSunbaWuk+4RSwltjQyvRRYRKl/HWDQ0R6ixsPnwCKvVaBphrKSjtzBKna4bWgUS2+sJNSK3HTqsTtMDvGbZkZje6bplpaDgPnHMR6/feDN4qkz6oKgODrql4r0sG38NcDMPJszDTfEQsGUxXAtdBG7jzpeTBHPRbCZ/Y7GVX37gNNMZnW4DUi3mrqQIwxzt9JkGnn7x8S6nCbIkSj6qpVq7j7zzD+VzQRGz1oySSJx3eHhPSOMdwqeC1fxz46FOPTSWpeZQe2+lhJWvr0YDQMqJ1bL6nS3ouufvgyVJuJiU9fok59eTGWgchA86SbKWV89us6aB08QYxP1dSollViaKPd7bdgl/V+0rt+8PbMjyDOr3d287bFP1uhdQfPFcfqjJG1wM4m1BixOPcECNVhbjysuJIwmQfkTKjJEFAWAixtbCkMtHdSnisNCJ0wl79g==|920
+}//2/A0FNN6Xut+pd9mGbEqrBIsVK4DnYFu3rhPkF7iAZ+61njznobYgIXuJxnIelKODm4GLedgbmO+wwFGsEVQ5v3qGUQa0dEUQ2JLVSjvrSEk12bytGHljDToloydcVyobfrLkF/IrqjMK7F1WdbRvUu8bcCHgLl7SBgiyJZ4HIuLrEKM6fW5zgMEt6c6gXCKBHOHHECxxB21hh8cWhbiKbqe7oPXnJd45z7+tsfoDter5SvcqRT/WeCcOKWG2/oCO1csgrkLgmUJHzI5eu6FU8eVUBjmzdz5s8qQ+1Kdr/ucN7lEXvSY0oQXGqnWBh3W1Gv83RU48LcTGWuDVYea3eFBZnON+sQlg2Cad/4aFqt1cdQB9/D6CvndTo8558gP/rbChO9F37xyEHn40IEcM5crjpUYffgvZXbaZ7k4kaApDUoXTU9FBEPH1qkqbFtP33cxQV9uP+yeZJF1V09cnbqQif2bB7WWdxEqntBpJ93BS5RU3ZYcDjjXT6wRm+9QpBXJKxrsNcEi94rrJEXm6tJKrVzFiGf/xhknNlzA1ZsOPgQlcvIhil38XDh2tD/QAhObbUB5zjV469BTaW6J3N1jnpn4/hZpth5vZ02xf69nY47Qo1dI0OfvSGa5tyo7Dxe5I4RBXHHRvh9Nd/TNECMw8usiJut+pizPOSSWOnOnp6nH7Y36VA4EcdbSi82V2YdzSCZR1lR7quLmotWxSlTREztJf/bzyoE+gQvIk2ZPl2NpyQeZ56FAauFp/stZ1BPZG+V3nByVtzrMDoyr+/taVQcChO3Wbpg5iETfw6zQJ7X4PljBvN0JtISAi6FG75bMkC0gTYHIuSXfbwHV5am0iHA8wOIErlvPQExtK3+Ks0KX/CGGV0IMKCSDCQ9l44JUIVam2qQZl9uoE16IyQ==|920
