@@ -13,7 +13,16 @@
   },
   {
     "ModuleName": "Table/投入計画_長期部材管理マスタ",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-28T15:00:24.5890436+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\投入計画_長期部材管理マスタ.json"
+    ]
   },
   {
     "ModuleName": "TableView/V投入計画_長期部材管理",
