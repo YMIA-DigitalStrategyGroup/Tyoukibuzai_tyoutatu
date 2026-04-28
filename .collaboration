@@ -13,16 +13,7 @@
   },
   {
     "ModuleName": "Table/投入計画_長期部材管理マスタ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-28T15:00:24.5890436+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\投入計画_長期部材管理マスタ.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "TableView/V投入計画_長期部材管理",
@@ -134,17 +125,7 @@
   },
   {
     "ModuleName": "PCPage/長期部材管理画面",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-27T11:52:02.9434505+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\長期部材管理画面.json",
-      "Pages\\長期部材管理画面.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/長期部材マスタ設定",
@@ -152,17 +133,7 @@
   },
   {
     "ModuleName": "PCPage/長期部材マスタ設定 (2)",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-27T10:09:45.7412501+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\長期部材マスタ設定 (2).json",
-      "Pages\\長期部材マスタ設定 (2).rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/長期部材管理画面 (2)",
