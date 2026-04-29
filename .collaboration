@@ -125,7 +125,17 @@
   },
   {
     "ModuleName": "PCPage/長期部材管理画面",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-29T13:49:31.145299+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\長期部材管理画面.json",
+      "Pages\\長期部材管理画面.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/長期部材マスタ設定",
@@ -138,7 +148,7 @@
       "UserName": "UNITY\\999D4610",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-04-28T15:32:22.7360304+09:00",
+    "LockDateTime": "2026-04-29T13:49:31.1445628+09:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\長期部材マスタ設定 (2).json",
