@@ -125,17 +125,7 @@
   },
   {
     "ModuleName": "PCPage/長期部材管理画面",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-29T13:49:31.145299+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\長期部材管理画面.json",
-      "Pages\\長期部材管理画面.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/長期部材マスタ設定",
@@ -143,17 +133,7 @@
   },
   {
     "ModuleName": "PCPage/長期部材マスタ設定 (2)",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-29T13:49:31.1445628+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\長期部材マスタ設定 (2).json",
-      "Pages\\長期部材マスタ設定 (2).rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/長期部材管理画面 (2)",
