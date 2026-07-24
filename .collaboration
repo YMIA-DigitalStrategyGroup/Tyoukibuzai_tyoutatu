@@ -5,7 +5,16 @@
   },
   {
     "ModuleName": "Table/投入計画_長期部材管理トランザクション明細",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-24T16:13:08.2254775+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\投入計画_長期部材管理トランザクション明細.json"
+    ]
   },
   {
     "ModuleName": "Table/投入計画_長期部材管理トランザクションヘッダ",
@@ -13,7 +22,16 @@
   },
   {
     "ModuleName": "Table/投入計画_長期部材管理マスタ",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-24T16:13:08.2255561+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\投入計画_長期部材管理マスタ.json"
+    ]
   },
   {
     "ModuleName": "TableView/V投入計画_長期部材管理",
